@@ -5,10 +5,10 @@ with open("README.md", "r") as fh:
 
 setup(
     name='umt',
-    version='0.0.1',
-    author='Nathan A. Rooy',
-    author_email='nathanrooy@gmail.com',
-    url='https://github.com/nathanrooy/rpi-urban-mobility-tracker',
+    version='0.0.2',
+    author='IoTGod',
+    author_email='schwienheer.rheine@gmail.com',
+    url='https://github.com/IotGod/rpi-urban-mobility-tracker-new',
     description='The easiest way to count pedestrians, cyclists, and vehicles on edge computing devices.',
     long_description=long_description,
     long_description_content_type="text/markdown",
