@@ -47,7 +47,7 @@ RUN pip3 install gast==0.4.0
 RUN pip3 install astunparse==1.6.3
 RUN pip3 install termcolor==1.1.0
 RUN pip3 install flatbuffers==1.12
-
+RUN apt-install -y apt-utils 
 # install tflite runtime
 RUN pip3 install https://github.com/google-coral/pycoral/releases/download/release-frogfish/tflite_runtime-2.5.0-cp37-cp37m-linux_armv7l.whl
 RUN apt-get install -y curl
