@@ -60,4 +60,4 @@ RUN pip3 install https://github.com/google-coral/pycoral/releases/download/relea
 
 # install umt
 RUN apt-get install -y git
-RUN pip3 install git+https://github.com/IotGod/rpi-urban-mobility-tracker-new --no-deps
+RUN pip3 install git+https://github.com/IotGod/rpi-urban-mobility-tracker-new.git --no-deps
