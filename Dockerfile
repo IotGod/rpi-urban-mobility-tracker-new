@@ -50,7 +50,14 @@ RUN pip3 install flatbuffers==1.12
 
 # install tflite runtime
 RUN pip3 install https://github.com/google-coral/pycoral/releases/download/release-frogfish/tflite_runtime-2.5.0-cp37-cp37m-linux_armv7l.whl
+RUN apt-get install -y curl
+RUN echo "deb https://packages.cloud.google.com/apt coral-edgetpu-stable main" | tee /etc/apt/sources.list.d/coral-edgetpu.list
+RUN curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
+RUN apt-get update -y
+RUN apt-get install -y libedgetpu1-std
+RUN apt-get install -y python3-pycoral
+RUN pip3 install https://github.com/google-coral/pycoral/releases/download/release-frogfish/tflite_runtime-2.5.0-cp37-cp37m-linux_armv7l.whl
 
 # install umt
 RUN apt-get install -y git
-RUN pip3 install git+https://github.com/nathanrooy/rpi-urban-mobility-tracker --no-deps
+RUN pip3 install git+https://github.com/IotGod/rpi-urban-mobility-tracker-new --no-deps
