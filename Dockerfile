@@ -57,6 +57,7 @@ RUN apt-get update -y
 RUN apt-get install -y libedgetpu1-std
 RUN apt-get install -y python3-pycoral
 RUN pip3 install https://github.com/google-coral/pycoral/releases/download/release-frogfish/tflite_runtime-2.5.0-cp37-cp37m-linux_armv7l.whl
+RUN pip install prometheus-client
 
 # install umt
 RUN apt-get install -y git
