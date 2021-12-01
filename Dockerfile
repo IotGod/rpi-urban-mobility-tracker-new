@@ -25,6 +25,7 @@ RUN pip3 install filterpy==1.4.5 --no-deps
 
 # download tensorflow 2.4 wheel and install
 WORKDIR /root
+RUN apt-get install -y git
 RUN apt-get install -y wget
 RUN apt-get install -y libhdf5-dev libc-ares-dev libeigen3-dev
 RUN pip3 install keras_applications==1.0.8 --no-deps
